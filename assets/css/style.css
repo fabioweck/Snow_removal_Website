@@ -1,0 +1,118 @@
+/*
+************************
+    ### PARAMETERS ###
+************************
+*/
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@font-face {
+    font-family:'Snow' ;
+    src: url(../fonts/home-christmas.otf) format('opentype');
+}
+
+:root {
+    --color0: #E3E8ED;
+    --color1: #D5E7F7;
+    --color2: #93A3B2;
+    --color3: #788896;
+    --color4: #3DB7AB;
+    --color5: #4695DA;
+    --color6: #6558F5;
+
+    --font-standard: Arial, Verdana, Helvetica, sans-serif;
+    --font-emphasis: 'Courgette', cursive;
+    --font-snow: 'Snow', cursive;
+}
+
+
+/*
+************************
+    ### GENERAL ###
+************************
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    background-color: var(--color0);
+    font-family: var(--font-standard);
+}
+
+/* ######### delete ######### */
+h1{
+    font-family: var(--font-emphasis);
+    color: var(--color5);
+}
+
+h2{
+    font-family: var(--font-snow);
+    color: var(--color6);
+}
+
+h3{
+    font-family: var(--font-standard);
+    color: var(--color4);
+}
+/* ######### delete ######### */
+
+/*
+************************
+    ### HEADER ###
+************************
+*/
+
+
+
+/*
+************************
+   ### MOBILE MENU ###
+************************
+*/
+nav.mobile-menu{
+    display: none;
+}
+
+
+/*
+************************
+  ### DESKTOP MENU ###
+************************
+*/
+
+
+
+/*
+************************
+    ### CONTENT ###
+************************
+*/
+
+
+
+/*
+************************
+     ### FOOTER ###
+************************
+*/
+
+
+
+/*
+************************
+  ### MEDIA QUERIES ###
+************************
+*/
+
+@media screen and (max-width: 768px){
+
+}
