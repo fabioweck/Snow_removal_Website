@@ -10,4 +10,4 @@
     ### FUNCTIONS ###
 ************************
 */
-alert("AnyHow - JS TEST - It works")
+//alert("AnyHow - JS TEST - It works")
