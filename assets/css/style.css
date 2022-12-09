@@ -20,6 +20,8 @@
     --color4: #3DB7AB;
     --color5: #4695DA;
     --color6: #6558F5;
+    --color7: #CED8E0;
+    --color8: #3f2ef9;
 
     --font-standard: Arial, Verdana, Helvetica, sans-serif;
     --font-emphasis: 'Courgette', cursive;
@@ -46,6 +48,11 @@ html,body{
 body{
     background-color: var(--color0);
     font-family: var(--font-standard);
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
 }
 
 /* ######### delete ######### */
@@ -96,6 +103,62 @@ nav.mobile-menu{
     ### CONTENT ###
 ************************
 */
+.content-services{
+    display: flex;
+    background-color: var(--color7);
+    border-top: solid 2px var(--color3);
+    border-bottom: solid 2px var(--color3);
+}
+
+.content-services h1{
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+#services-block-wrap{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#services-block-wrap div{
+    background-color: white;
+    max-width: 800px;
+}
+
+#services-block-wrap div h2{
+    background-color: var(--color1);
+    color: var(--color3);
+    border: solid 3px var(--color5);
+    text-align: center;
+    padding: 10px;
+}
+
+#services-block-wrap div p{
+    text-align: justify;
+    padding: 15px;
+}
+
+#services-block-wrap > div > div {
+    text-align: right;
+}
+
+#services-block-wrap div input{
+    background-color: var(--color6);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin: 0 20px 20px 0;
+    width: 80px;
+    height: 40px;
+    font-size: 1em;
+}
+
+#services-block-wrap div input:hover{
+    background-color: var(--color8);
+    cursor: pointer;
+}
 
 
 
