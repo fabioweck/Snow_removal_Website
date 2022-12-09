@@ -235,5 +235,19 @@ nav.mobile-menu{
 */
 
 @media screen and (max-width: 768px){
+    .location-map iframe{
+       width: 350px;
+    }
+    .footer-content {
+        height: 700px;
+        margin-bottom: 20px;
+    }
 
+    .footer-content > .container > div {
+        flex-direction: column;
+    }
+
+    #footer-block-wrap > div > h3 {
+        margin-top: 20px;
+    }
 }
