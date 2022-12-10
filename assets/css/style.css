@@ -287,7 +287,8 @@ nav.mobile-menu{
 */
 
 @media screen and (max-width: 768px){
-    #services-block-wrap .plan-wrap{
+
+ #services-block-wrap .plan-wrap{
         flex-direction: column;
         justify-content: center;
     }
@@ -304,5 +305,20 @@ nav.mobile-menu{
     #services-block-wrap div input{
         width: 30%;
         margin: auto;
+        
+    .location-map iframe{
+       width: 350px;
+    }
+    .footer-content {
+        height: 700px;
+        margin-bottom: 20px;
+    }
+
+    .footer-content > .container > div {
+        flex-direction: column;
+    }
+
+    #footer-block-wrap > div > h3 {
+        margin-top: 20px;
     }
 }
