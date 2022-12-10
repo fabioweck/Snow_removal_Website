@@ -124,19 +124,22 @@ nav.mobile-menu{
 #services-block-wrap div{
     background-color: white;
     max-width: 800px;
+    margin-bottom: 40px;
+    border-radius: 10px;
 }
 
 #services-block-wrap div h2{
     background-color: var(--color1);
     color: var(--color3);
     border: solid 3px var(--color5);
+    border-radius: 10px;
     text-align: center;
     padding: 10px;
 }
 
 #services-block-wrap div p{
     text-align: justify;
-    padding: 15px;
+    padding: 10px;
 }
 
 #services-block-wrap > div > div {
@@ -149,7 +152,7 @@ nav.mobile-menu{
     border-radius: 5px;
     border: none;
     padding: 10px;
-    margin: 0 20px 20px 0;
+    margin-right: 20px;
     width: 80px;
     height: 40px;
     font-size: 1em;
@@ -158,6 +161,55 @@ nav.mobile-menu{
 #services-block-wrap div input:hover{
     background-color: var(--color8);
     cursor: pointer;
+}
+
+#services-block-wrap .plan-wrap{
+    display: none;
+    justify-content: space-around;
+}
+
+
+#services-block-wrap .plan-wrap div{
+    background-color: var(--color1);
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    width: 200px;
+}
+
+#services-block-wrap .plan-wrap div > h3{
+    padding: 20px;
+    color: black;
+}
+
+#services-block-wrap .plan-wrap div h4 > span{
+    font-size: 2.5em;
+    color: #3DB7AB;
+}
+
+#services-block-wrap .plan-wrap div > div{
+    border-top: solid 2px var(--color2);
+    box-shadow: none;
+    margin-top: 20px;
+    width: 80%;
+}
+
+#services-block-wrap .plan-wrap div p{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#services-block-wrap .plan-wrap div p img{
+    width: 30px;
+}
+
+#services-block-wrap .plan-wrap div > input{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 
@@ -235,6 +287,25 @@ nav.mobile-menu{
 */
 
 @media screen and (max-width: 768px){
+
+ #services-block-wrap .plan-wrap{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #services-block-wrap .plan-wrap div{
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    #services-block-wrap > div > div {
+        text-align: center;
+    }
+
+    #services-block-wrap div input{
+        width: 30%;
+        margin: auto;
+        
     .location-map iframe{
        width: 350px;
     }
