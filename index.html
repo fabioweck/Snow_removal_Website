@@ -16,97 +16,119 @@
         
         <header>
 
-            <div class="container">
-
-                <div class="logo">
-                    <img src="./assets/img/snowflakes-logo.png" alt="Logo" width="50px"> 
-                    <!-- ######### Remove width here and adjust in CSS file #########-->
-                    <p>Company 
-                        Name</p>
-                </div>
-
-                <nav class="desktop-menu">
-
-                    <ul>
-                        <li><a target="_blank" href="###">ABOUT</a></li>
-                        <li><a target="_blank" href="###">SERVICES</a></li>
-                        <li><a target="_blank" href="###">CONTACT</a></li>
-                    </ul>
-
-                </nav><!--desktop-menu-->
-
-                <nav class="mobile-menu">
-
-                    <ul>
-                        <li><a href="###"></a>ABOUT</li>
-                        <li><a href="###"></a>SERVICES</li>
-                        <li><a href="###"></a>CONTACT</li>
-                    </ul>
-
-                </nav><!--mobile-menu-->
+            <!-- Fabio Weck - Begin ************-->
             
-            </div><!--container-->
+                        <div class="container">
+            
+                            <div class="logo">
+                                <img src="./assets/img/snowflakes-logo.png" alt="Logo"> 
+                                <!-- ######### Remove width here and adjust in CSS file #########-->
+                            </div>
+            
+                            <div class="company-name">
+                                <p>Anyhow Corp.</p>
+                            </div>
+            
+                            <nav class="desktop-menu">
+                           <!--############ PLAGIO DO W3SCHOOLS ###############-->     
+                            <div class="navbar">
+                                
+                                <div class="dropdown">
+                                    <button class="dropbtn" onclick="myFunction()">SERVICES</button>
 
-        </header>
+                                    <div class="dropdown-content" id="myDropdown">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                        <a href="#">Link 4</a>
+                                        <a href="#">Link 5</a>
+                                    </div>
 
-        <main>
-
-            <section class="content-quote">
-
-                <div class="container">
-
-                    <div id="quote-block-wrap">
-
-                        <h1>Unlimited snow removal in the AnyHow</h1>
+                                </div>                                
+                                <a href="#home">ABOUT</a>
+                                <a href="#news">CONTACT</a>
+                            </div>
+            
+                            </nav><!--desktop-menu-->
+            
+                            <nav class="mobile-menu">
+            
+                                <ul>
+                                    <li><a href="###"></a>ABOUT</li>
+                                    <li><a href="###"></a>SERVICES</li>
+                                    <li><a href="###"></a>CONTACT</li>
+                                </ul>
+            
+                            </nav><!--mobile-menu-->
                         
-                        <input type="button" value="Get a quote">
-
-                    </div><!--quote-block-wrap-->
-
-                </div><!--container-->
-
-            </section><!--content-quote-->
-
-            <section class="img-division-top">
-
-                <div class="container">
-
-                    <img src="./assets/img/snow-plow-pick-up-truck-vector.jpg" alt="Snow Pick Up" width="500px">
-                    <!-- ######### Remove width here and adjust in CSS file #########-->
-
-                </div><!--container-->
-
-            </section><!--img-division-top-->
-
+                        </div><!--container-->
             
-            <section class="content-mission">
+                    </header>
+            
+                    <main>
+            
+                        <section class="content-quote">
+            
+                            <div class="container">
+            
+                                <div id="quote-block-wrap">
+            
+                                    <h1>Unlimited snow removal in the AnyHow</h1>   
+            
+                                </div><!--quote-block-wrap-->
+            
+                                <div class="get-quote">
+                                <a href="#content-contact">
+                                    <input type="button" value="Get a quote">
+                                </a>
+                                </div><!--get-quote-->
+            
+                            </div><!--container-->
+            
+                        </section><!--content-quote-->
+            
+                        <section class="img-division-top">
 
-                <div class="container">
-                    
-                    <div id="mission-block-wrap">
+                            <div class="container">
+            
+                            <!--    <img src="./assets/img/image1.jpg"  alt="Snow Truck"> -->
 
-                        <div>
-                            <p>
-                                a. Include a section to show an objective,
-                                mission and vision of this service
-                                provider company.
-                            </p>
-                            <p>
-                                Contrary to popular belief, Lorem Ipsum is not simply random text.
-                                It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock
-                            </p>
-                        </div>
-
-                        <div>
-                            <img src="./assets/img/snow-plow-truck-cleaning-snow-vector.jpg" alt="Snow Truck" width="500px">
-                            <!-- ######### Remove width here and adjust in CSS file #########-->
-                        </div>
-
-                    </div><!--mission-block-wrap-->
-
-                </div><!--container-->
-
-            </section><!--content-mission-->
+                            </div><!--container-->
+            
+                        </section><!--img-division-top-->
+            
+                        
+                        <section class="content-mission">
+            
+                            <div class="container">
+                                
+                                <div id="mission-block-wrap">
+            
+                                    <div class="mission-vision">
+                                        <p>
+                                            As a company commited to delivering the best services,
+                                            our mission is offering modern and fast solutions for our clients                               
+                                        </p>
+                                        <p>
+                                            - Over 20 years of experience</br>
+                                            - Wide variety of services</br>
+                                            - Qualified personnel</br>
+                                            - Updated equipment                                           
+                                        </p>
+                                    </div>
+            
+                                    <div class="mission-image">
+                                        <img src="./assets/img/image3.jpg"  alt="Snow Truck">
+                                        <!-- ######### Remove width here and adjust in CSS file #########-->
+                                    </div>
+            
+                                </div><!--mission-block-wrap-->
+            
+                            </div><!--container-->
+            
+                        </section><!--content-mission-->
+            
+                        <!-- Fabio Weck - End ************-->
 
             <section class="content-services">
 
@@ -140,7 +162,7 @@
 
             </section><!--content-services-->
 
-            <section class="content-contact">
+            <section id="content-contact">
 
                 <div class="container">
                     
@@ -246,7 +268,7 @@
 
                 <div class="container">
 
-                    <img src="./assets/img/snow-shovel.jpeg" alt="Snow Pick Up" width="500px">
+                    <img src="./assets/img/snow-shovel.jpeg" alt="Snow Pick Up" width="100%">
                     <!-- ######### Remove width here and adjust in CSS file #########-->
 
                 </div><!--container-->
