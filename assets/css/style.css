@@ -213,7 +213,7 @@ nav.mobile-menu{
 }
 
 .form{
-    width: 70%;
+    width: 100%;
 }
 
 .form input, textarea{
@@ -441,6 +441,8 @@ h1{
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+    border-top: solid 2px var(--color3);
+    border-bottom: solid 2px var(--color3);
 }
 
 
@@ -560,12 +562,19 @@ h1{
   .card p {
     color: var(--color2);
     font-size: 16px;
-  }
-
+}
 
 .img-bottom{
     width: 100%;
+    margin-bottom: 0px;
+
 }
+
+.img-division-bottom{
+    border-bottom: solid 2px var(--color3);
+}
+
+
 
 #services-block-wrap .plan-wrap div{
     background-color: var(--color1);
@@ -614,7 +623,7 @@ h1{
 .location-map {
     display: flex;
     justify-content: center;
-    margin: 40px 0 0 0;
+    margin: 0 0 0 0;
     background-color: white;
 }
 
