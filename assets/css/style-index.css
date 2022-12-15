@@ -191,14 +191,15 @@ nav.mobile-menu{
   ### CONTACT MENU ###
 ************************
 */
-.content-contact{
+#content-contact{
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 20px;
 }
 
-.content-contact .container{
+#content-contact .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -207,9 +208,9 @@ nav.mobile-menu{
     width: 100%;
 }
 
-.content-contact .container h1{
-    padding: 20px;
-    font-size: 32px;
+#content-contact .container h1{
+    text-align: center;
+    margin: 20px 0 40px 0;
 }
 
 .form{
@@ -441,16 +442,12 @@ h1{
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    border-top: solid 2px var(--color3);
-    border-bottom: solid 2px var(--color3);
 }
 
 
 .content-services{
     display: flex;
     background-color: var(--color7);
-    border-top: solid 2px var(--color3);
-    border-bottom: solid 2px var(--color3);
 }
 
 .content-services h1{
@@ -528,6 +525,11 @@ h1{
     padding: 16px;
 }
 
+.content-choose > .content-choose-text > h1 {
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
 .content-choose .container{
     display: flex;
     width: 100%;
@@ -569,11 +571,6 @@ h1{
     margin-bottom: 0px;
 
 }
-
-.img-division-bottom{
-    border-bottom: solid 2px var(--color3);
-}
-
 
 
 #services-block-wrap .plan-wrap div{
@@ -627,10 +624,9 @@ h1{
     background-color: white;
 }
 
-.location-map > .container > h2 {
+.location-map > .container > h1 {
     text-align: center;
-    padding: 30px;
-    color: var(--color5);
+    margin: 20px 0 40px 0;
 }
 
 .location-map > .container > iframe {
@@ -646,7 +642,6 @@ h1{
 .footer-content {
     height: 400px;
     padding-top: 40px;
-    border-top: 1px solid rgb(128, 127, 127);
 }
 
 .footer-content > .container > div {
