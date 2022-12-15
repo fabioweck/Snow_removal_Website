@@ -13,12 +13,6 @@ var subject = document.getElementById('subject')
 var message = document.getElementById('message')
 
 /*
-************************
-    ### FUNCTIONS ###
-************************
-*/
-
-
 /************************
   ### DROPDOWN MENU ###
 ************************
@@ -143,7 +137,11 @@ function checkInputs()
 }
 
 
-//Scope - Show plans and prices
+/*
+************************
+### SCOPE - SHOW PLANS AND PRICES ###
+************************
+*/
 {
     for(let i=1; i <= 3; i++)
     {
