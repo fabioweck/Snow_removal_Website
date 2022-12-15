@@ -166,3 +166,14 @@ function checkInputs()
         })
     }
 }
+
+
+/*
+************************
+  ### FOOTER ###
+************************
+*/
+
+function showTel(){
+  alert("Thank you for reaching out!");
+}

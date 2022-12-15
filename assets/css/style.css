@@ -627,10 +627,11 @@ h1{
     background-color: white;
 }
 
-.location-map > .container > h2 {
+.location-map > .container > h1 {
     text-align: center;
     padding: 30px;
     color: var(--color5);
+    margin: 20px 0 40px 0;
 }
 
 .location-map > .container > iframe {
