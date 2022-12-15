@@ -107,6 +107,7 @@ header .container{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 10px 0px;
 }
 
 /*
@@ -128,10 +129,11 @@ nav.mobile-menu{
     overflow: hidden;
     display:flex;
     flex-direction: row;
+    align-items: center;
   }
   
   .navbar a {
-      padding: 0px 10px;
+    padding: 10px 20px;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
@@ -140,11 +142,33 @@ nav.mobile-menu{
     
   }
   
+  #about:hover{
+    transition: 0.3s;
+    background-color: var(--color2) ;
+    border-radius: 3px;
+
+  }
+
+  #contact-link:hover{
+    transition: 0.3s;
+    background-color: var(--color2) ;
+    border-radius: 3px;
+    
+
+  }
+
+
   .dropdown {
     float: left;
     overflow: hidden;
   }
   
+  .dropdown:hover{
+    transition: 0.3s;
+    background-color: var(--color2) ;
+    border-radius: 3px;
+  }
+
   .dropdown .dropbtn {
 
     font-weight: bold;
@@ -153,7 +177,7 @@ nav.mobile-menu{
     outline: none;
     cursor: pointer;
     color: rgb(79, 79, 79);
-    padding: 0px 20px;
+    padding: 10px 20px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -164,7 +188,7 @@ nav.mobile-menu{
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 140px;
+    min-width: 216px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -340,7 +364,7 @@ h1{
 }
 
 .get-quote input{
-    background-color: #5a4edc;
+    background-color: var(--color6);
     padding: 15px 30px;
     border: none;
     font-size: 30px;
@@ -350,16 +374,8 @@ h1{
 }
 
 .get-quote input:hover{
-    background-color: #877cff;
-}
-
-.quote-block-wrap{
-    display: flex;
-    flex-direction: column;
-}
-
-.quote-block-wrap input{
-    align-items: center;
+    background-color: var(--color8);
+    transition: 0.3s;
 }
 
 .img-division-top > .container{
@@ -370,8 +386,37 @@ h1{
     background-size: cover;
 }
 
+.img-division-top > .container > .img-division-about{
+    height: 500px;
+    background-image: url("../img/happy-friends.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .img-division-top img{
     width: 100%;   
+}
+
+.about{
+    background-color:  rgb(227, 249, 255) ;
+    padding-bottom: 50px;
+}
+
+.about > h1{
+    padding: 50px 0px;
+}
+
+.about > p{
+    font-size: 30px;
+    padding: 20px 60px;   
+}
+
+#gandalf {
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    padding: 100px 0px;
 }
 
 #mission-block-wrap{
@@ -705,6 +750,12 @@ h1{
         margin-top: 40px;
     }
 
+    .dropdown-content{
+        min-width: 160px;
+    }
+
+
+
 }
 
 @media screen and (max-width: 778px)
@@ -760,16 +811,28 @@ h1{
         padding: 10px 0px;
       }
     
-      .navbar a {
-        padding: 15px 0px;
-      }
+    #about{
+        padding: 20px 62px;
+    }
 
-      .dropdown
-      {
-         padding: 15px 0px;
-      }
+    #contact-link{
+        padding: 20px 50px;
+    }
 
- #services-block-wrap .plan-wrap{
+    .navbar a {
+    padding: 15px 0px;
+    }
+
+    .dropdown .dropbtn 
+    {
+        padding: 20px 10px;
+    }
+
+    .dropdown-content{
+        min-width: 195px;
+    }
+
+    #services-block-wrap .plan-wrap{
         flex-direction: column;
         justify-content: center;
     }
