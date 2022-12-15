@@ -111,16 +111,6 @@ header .container{
 
 /*
 ************************
-   ### MOBILE MENU ###
-************************
-*/
-nav.mobile-menu{
-    display: none;
-}
-
-
-/*
-************************
   ### DESKTOP MENU ###
 ************************
 */
@@ -758,18 +748,18 @@ h1{
     .navbar {
         flex-direction: column;
         padding: 10px 0px;
-      }
+    }
     
-      .navbar a {
+    .navbar a {
+    padding: 15px 0px;
+    }
+
+    .dropdown
+    {
         padding: 15px 0px;
-      }
+    }
 
-      .dropdown
-      {
-         padding: 15px 0px;
-      }
-
- #services-block-wrap .plan-wrap{
+    #services-block-wrap .plan-wrap{
         flex-direction: column;
         justify-content: center;
     }
@@ -791,6 +781,7 @@ h1{
     .location-map iframe{
        width: 350px;
     }
+    
     .footer-content {
         height: 700px;
         margin-bottom: 20px;

@@ -1,0 +1,36 @@
+$bgColor0: #E3E8ED;
+$bgColor1: #5B8CBC;
+$bgColor2: #386399;
+
+$txtColor0: white;
+$txtColor1: #4695DA;
+$txtColor2: #1A4573;
+
+$btnColor0: white;
+$btnColor1: #5553FF;
+$btnColor2: #2320CC;
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+$font-title: 'Courgette', cursive;
+$font-title-color: $txtColor2;
+$font-title-size: 2em;
+$font-title-weight: bold;
+$font-title-padding: 40px;
+$font-title-margin: 1px;
+
+$font-subTitle: Arial, Verdana, Helvetica, sans-serif;
+$font-subTitle-color: $txtColor1;
+$font-subTitle-size: 1.5em;
+$font-subTitle-weight: 100;
+$font-subTitle-padding-top: 20px;
+$font-subTitle-padding-bottom: 10px;
+$font-subTitle-margin: 0px;
+
+$font-standard: Arial, Verdana, Helvetica, sans-serif;
+$font-standard-color: $txtColor1;
+$font-standard-size: 1.2em;
+$font-standard-weight: 100;
+$font-standard-padding-top: 20px;
+$font-standard-padding-bottom: 10px;
+$font-standard-margin: 0px;
