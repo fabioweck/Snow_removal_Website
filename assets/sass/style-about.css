@@ -1,0 +1,252 @@
+/*
+************************
+    ### PARAMETERS ###
+************************
+*/
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+/*
+************************
+    ### GENERAL ###
+************************
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #E3E8ED;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+/*
+************************
+    ### HEADER ###
+************************
+*/
+header {
+  /*
+  ************************
+  ### DESKTOP MENU ###
+  ************************
+  */
+}
+header .container {
+  display: flex;
+  height: 120px;
+  align-items: center;
+}
+header .logo {
+  width: 20%;
+}
+header .logo img {
+  float: right;
+  margin-right: 30px;
+  width: 60px;
+}
+header .company-name {
+  width: 30%;
+  font-size: 30px;
+  font-weight: bold;
+}
+header .desktop-menu {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+header .navbar {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+header .navbar a {
+  padding: 0px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(79, 79, 79);
+  text-align: center;
+}
+header .dropdown {
+  float: left;
+  overflow: hidden;
+}
+header .dropdown .dropbtn {
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: rgb(79, 79, 79);
+  padding: 0px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+header .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+header .dropdown-content a {
+  float: none;
+  color: rgb(79, 79, 79);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+header .dropdown-content a:hover {
+  background-color: #ddd;
+}
+header .show {
+  display: block;
+}
+
+/*
+************************
+    ### CONTENT ###
+************************
+*/
+.about-us {
+  color: #1A4573;
+  background-color: #5B8CBC;
+}
+.about-us h1 {
+  padding: 20px;
+}
+.about-us p {
+  padding: 20px;
+}
+
+/*
+************************
+     ### FOOTER ###
+************************
+*/
+.footer-content {
+  height: 400px;
+  padding-top: 40px;
+}
+.footer-content .container > div {
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer-block-wrap div h3 {
+  text-align: center;
+  color: #4695DA;
+  padding: 20px;
+}
+#footer-block-wrap div p {
+  text-align: center;
+  padding: 15px;
+}
+#footer-block-wrap div a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-rights .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid rgb(128, 127, 127);
+  padding: 40px;
+}
+
+.footer-social-links {
+  display: inline;
+}
+.footer-social-links a img {
+  width: 40px;
+  align-items: center;
+  margin: 0 20px 10px 20px;
+}
+
+/*
+************************
+  ### MEDIA QUERIES ###
+************************
+*/
+@media screen and (max-width: 920px) {
+  #mission-block-wrap {
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  #mission-block-wrap div {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .mission-image img {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 778px) {
+  #mission-block-wrap {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .mission-image img {
+    margin-top: 40px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    height: 100%;
+  }
+  header .container .logo {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  header .container .logo img {
+    float: none;
+    margin-right: 0px;
+    width: 80px;
+  }
+  header .container .company-name {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  header .container .navbar {
+    flex-direction: column;
+    padding: 10px 0px;
+  }
+  header .container .navbar a {
+    padding: 15px 0px;
+  }
+  header .container .navbar .dropdown {
+    padding: 15px 0px;
+  }
+  .footer-content {
+    height: 700px;
+    margin-bottom: 20px;
+  }
+  .footer-content .container div {
+    flex-direction: column;
+  }
+  .footer-content .container #footer-block-wrap div h3 {
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=style-about.css.map */

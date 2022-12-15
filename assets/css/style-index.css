@@ -118,6 +118,7 @@ nav.mobile-menu{
     display: none;
 }
 
+
 /*
 ************************
   ### DESKTOP MENU ###
@@ -127,24 +128,25 @@ nav.mobile-menu{
     overflow: hidden;
     display:flex;
     flex-direction: row;
-}
+  }
   
-.navbar a {
-    padding: 0px 10px;
+  .navbar a {
+      padding: 0px 10px;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
     color: rgb(79, 79, 79);
     text-align: center;
     
-}
+  }
   
-.dropdown {
+  .dropdown {
     float: left;
     overflow: hidden;
-}
+  }
   
-.dropdown .dropbtn {
+  .dropdown .dropbtn {
+
     font-weight: bold;
     font-size: 20px;  
     border: none;
@@ -155,225 +157,34 @@ nav.mobile-menu{
     background-color: inherit;
     font-family: inherit;
     margin: 0;
-}
+  }
   
-.dropdown-content {
+  
+  .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 140px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-}
+  }
   
-.dropdown-content a {
+  .dropdown-content a {
     float: none;
     color: rgb(79, 79, 79);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: center;
-}
+  }
   
   .dropdown-content a:hover {
     background-color: #ddd;
-}
+  }
   
-.show {
+  .show {
     display: block;
-}
-
-/*
-************************
-    ### CONTENT ###
-************************
-*/
-h1{
-    text-align: center;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.content-quote .container{
-    height: 300px;
-    background-color: rgb(215, 239, 255);
-    justify-content: space-evenly;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.get-quote{
-    display: flex;
-    align-items: center;
-}
-
-.get-quote input{
-    background-color: #5a4edc;
-    padding: 15px 30px;
-    border: none;
-    font-size: 30px;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.get-quote input:hover{
-    background-color: #877cff;
-}
-
-.quote-block-wrap{
-    display: flex;
-    flex-direction: column;
-}
-
-.quote-block-wrap input{
-    align-items: center;
-}
-
-.img-division-top > .container{
-    height: 500px;
-    background-image: url("../img/image1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.img-division-top img{
-    width: 100%;   
-}
-
-#mission-block-wrap{
-    display: flex;
-    flex-direction: row;
-    height: 600px;
-    background-color: rgb(227, 249, 255);
-}
-
-#mission-block-wrap div{
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.mission-image{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.mission-image img{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 450px;
-}
-
-.content-mission > .container > div > img{
-    display: block;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.content-mission > .container > div{
-    justify-content: center;
-    min-width: 300px;
-    text-align: center;
-}
-
-.mission-vision > p{
-    font-size: 30px;
-    padding: 20px 60px;   
-}
-
-.mission-vision{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.content-services{
-    padding-top: 20px;
-    background-color: #d4e2ef;
-}
-
-.content-services > .container h1{
-    text-align: center;
-    font-size: 50px;
-}
-
-/*
-************************
-  ### SERVICES ###
-************************
-*/
-.content-services{
-    display: flex;
-    background-color: var(--color7);
-}
-
-.content-services h1{
-    text-align: center;
-    margin: 20px 0 40px 0;
-}
-
-#services-block-wrap{
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-}
-
-#services-block-wrap div{
-    background-color: white;
-    max-width: 800px;
-    margin-bottom: 40px;
-    border-radius: 10px;
-}
-
-#services-block-wrap div h2{
-    background-color: var(--color1);
-    color: var(--color3);
-    border: solid 3px var(--color5);
-    border-radius: 10px;
-    text-align: center;
-    padding: 10px;
-}
-
-#services-block-wrap div p{
-    text-align: justify;
-    padding: 10px;
-}
-
-#services-block-wrap > div > div {
-    text-align: right;
-}
-
-#services-block-wrap div input{
-    background-color: var(--color6);
-    color: white;
-    border-radius: 5px;
-    border: none;
-    padding: 10px;
-    margin-right: 20px;
-    width: 80px;
-    height: 40px;
-    font-size: 1em;
-}
-
-#services-block-wrap div input:hover{
-    background-color: var(--color8);
-    cursor: pointer;
-}
-
-#services-block-wrap .plan-wrap{
-    display: none;
-    justify-content: space-around;
-}
+  }
 
 /*
 ************************
@@ -396,10 +207,9 @@ h1{
     width: 100%;
 }
 
-#content-contact .container h1{
-    margin: 20px 0 40px 0;
-    padding: 10px;
-    font-size: 50px;
+.content-contact .container h1{
+    padding: 20px;
+    font-size: 32px;
 }
 
 .form{
@@ -499,9 +309,131 @@ h1{
 
 /*
 ************************
-  ### Why Choose Us ###
+    ### CONTENT ###
 ************************
 */
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-quote .container{
+    height: 300px;
+    background-color: rgb(215, 239, 255);
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.get-quote{
+    display: flex;
+    align-items: center;
+}
+
+.get-quote input{
+    background-color: #5a4edc;
+    padding: 15px 30px;
+    border: none;
+    font-size: 30px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.get-quote input:hover{
+    background-color: #877cff;
+}
+
+.quote-block-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-block-wrap input{
+    align-items: center;
+}
+
+.img-division-top > .container{
+    height: 500px;
+    background-image: url("../img/image1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-division-top img{
+    width: 100%;   
+}
+
+#mission-block-wrap{
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    background-color: rgb(227, 249, 255);
+}
+
+#mission-block-wrap div{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mission-image{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mission-image img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 450px;
+}
+
+.content-mission > .container > div > img{
+    
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.content-mission > .container > div{
+    justify-content: center;
+    min-width: 300px;
+    text-align: center;
+}
+
+.mission-vision > p{
+    font-size: 30px;
+    padding: 20px 60px;   
+}
+
+.mission-vision{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.content-services{
+    padding-top: 20px;
+    background-color: #d4e2ef;
+}
+
+.content-services > .container h1{
+    text-align: center;
+    font-size: 50px;
+}
+
 .content-choose{
     background-color: var(--color7);
     display: flex;
@@ -509,10 +441,77 @@ h1{
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+    border-top: solid 2px var(--color3);
+    border-bottom: solid 2px var(--color3);
+}
+
+
+.content-services{
+    display: flex;
+    background-color: var(--color7);
+    border-top: solid 2px var(--color3);
+    border-bottom: solid 2px var(--color3);
+}
+
+.content-services h1{
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+#services-block-wrap{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#services-block-wrap div{
+    background-color: white;
+    max-width: 800px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+#services-block-wrap div h2{
+    background-color: var(--color1);
+    color: var(--color3);
+    border: solid 3px var(--color5);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+#services-block-wrap div p{
+    text-align: justify;
+    padding: 10px;
+}
+
+#services-block-wrap > div > div {
+    text-align: right;
+}
+
+#services-block-wrap div input{
+    background-color: var(--color6);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-right: 20px;
+    width: 80px;
+    height: 40px;
+    font-size: 1em;
+}
+
+#services-block-wrap div input:hover{
+    background-color: var(--color8);
+    cursor: pointer;
+}
+
+#services-block-wrap .plan-wrap{
+    display: none;
+    justify-content: space-around;
 }
 
 .content-choose-text{
-    margin: 20px 0 40px 0;
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -524,7 +523,7 @@ h1{
 
 .content-choose-text p{
     color: var(--color4);
-    font-size: 60px;
+    font-size: 32px;
     text-align: center;
     padding: 16px;
 }
@@ -568,13 +567,14 @@ h1{
 .img-bottom{
     width: 100%;
     margin-bottom: 0px;
+
 }
 
-/*
-************************
-  ### MAP SECTION ###
-************************
-*/
+.img-division-bottom{
+    border-bottom: solid 2px var(--color3);
+}
+
+
 
 #services-block-wrap .plan-wrap div{
     background-color: var(--color1);
@@ -629,7 +629,6 @@ h1{
 
 .location-map > .container > h2 {
     text-align: center;
-    font-size: 60px;
     padding: 30px;
     color: var(--color5);
 }
@@ -647,6 +646,7 @@ h1{
 .footer-content {
     height: 400px;
     padding-top: 40px;
+    border-top: 1px solid rgb(128, 127, 127);
 }
 
 .footer-content > .container > div {
