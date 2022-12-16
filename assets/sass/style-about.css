@@ -191,8 +191,9 @@ header .show {
 }
 #footer-block-wrap div h3 {
   text-align: center;
-  color: #4695DA;
+  color: #447BD4;
   padding: 40px 20px 0px 20px;
+  text-transform: uppercase;
 }
 #footer-block-wrap div p {
   text-align: center;
