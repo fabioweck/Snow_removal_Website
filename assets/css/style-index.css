@@ -842,6 +842,10 @@ h1{
          padding: 15px 0px;
       }
 
+      .other-services:hover{
+        background-color: var(--color8);   
+    }
+
     #services-block-wrap .plan-wrap{
         flex-direction: column;
         justify-content: center;

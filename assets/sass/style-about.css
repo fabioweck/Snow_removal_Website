@@ -77,7 +77,7 @@ header .navbar a {
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
-  color: rgb(79, 79, 79);
+  color: #14243D;
   text-align: center;
 }
 header .navbar .about:hover {
@@ -104,7 +104,7 @@ header .other-services .ots-button {
   border: none;
   outline: none;
   cursor: pointer;
-  color: rgb(79, 79, 79);
+  color: #14243D;
   padding: 0px 10px;
   background-color: inherit;
   font-family: inherit;
@@ -287,6 +287,9 @@ header .show {
   }
   header .container .navbar .other-services {
     padding: 15px 0px;
+  }
+  header .container .navbar .other-services:hover {
+    background-color: #14243D;
   }
   .footer-content {
     height: 700px;
