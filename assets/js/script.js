@@ -175,74 +175,28 @@ function checkInputs()
 ************************
 */
 {//Simulate the residential purchase after press the button.
-  for(let i=1; i <= 3; i++)
+  for(let i=1; i<=3; i++)
   {
-    document.querySelector(`input[name=service1-0${i}-buy]`)
-    .addEventListener('click', ()=>{
+    for(let j=1; j<=3; j++){
+      document.querySelector(`input[name=service${i}-0${j}-buy]`)
+      .addEventListener('click', ()=>{
 
-      switch(i) {
-        case 1:
-          alert("Congrats! You bought a SINGLE service!");
-          break;
-
-        case 2:
-          alert("Congrats! You bought a MONTHLY service!");
-          break;
-
-          case 3:
-            alert("Congrats! You bought a ANNUAL service!");
+        switch(j) {
+          case 1:
+            alert("Congrats! You bought a SINGLE service!");
             break;
-        default:
-      }
-    })
-  }
-}
 
-{//Simulate the driveway purchase after press the button.
-for(let i=1; i <= 3; i++)
-  {
-    document.querySelector(`input[name=service2-0${i}-buy]`)
-    .addEventListener('click', ()=>{
-
-      switch(i) {
-        case 1:
-          alert("Congrats! You bought a SINGLE service!");
-          break;
-
-        case 2:
-          alert("Congrats! You bought a MONTHLY service!");
-          break;
-
-          case 3:
-            alert("Congrats! You bought a ANNUAL service!");
+          case 2:
+            alert("Congrats! You bought a MONTHLY service!");
             break;
-        default:
-      }
-    })
-  }
-}
 
-{//Simulate the snow plowing purchase after press the button.
-  for(let i=1; i <= 3; i++)
-  {
-    document.querySelector(`input[name=service3-0${i}-buy]`)
-    .addEventListener('click', ()=>{
-
-      switch(i) {
-        case 1:
-          alert("Congrats! You bought a SINGLE service!");
-          break;
-
-        case 2:
-          alert("Congrats! You bought a MONTHLY service!");
-          break;
-
-          case 3:
-            alert("Congrats! You bought a ANNUAL service!");
-            break;
-        default:
-      }
-    })
+            case 3:
+              alert("Congrats! You bought a ANNUAL service!");
+              break;
+          default:
+        }
+      })
+    }
   }
 }
 

@@ -581,14 +581,14 @@ h1{
     flex-wrap: wrap;
 }
 
-.card{
+.card {
     background-color: var(--color0);
-    margin: 10px;
+    margin: 10px 10px 40px 10px;
     padding: 15px;
-    width: 300px;
+    width: 280px;
     height: 250px;
     border-radius: 50px;
-    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    box-shadow: 7px 7px 13px 0px rgb(50 50 50 / 22%);
     transition: all 0.3s ease-out;
     display: flex;
     justify-content: space-evenly;
