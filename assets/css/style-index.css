@@ -407,8 +407,6 @@ h1{
     justify-content: space-between;
 }
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>*/
-
 #services-block-wrap .plan-wrap div{
     background-color: var(--color1);
     box-shadow: 0px 0px 10px var(--color13);
