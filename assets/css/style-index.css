@@ -5,26 +5,26 @@
 */
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 @font-face {
     font-family:'Snow' ;
-    src: url(../fonts/home-christmas.otf) format('opentype');
+    src: url(../fonts/Timeless.ttf) format('opentype');
 }
 
 :root {
-    --color0: #E3E8ED;
-    --color1: #D5E7F7;
-    --color2: #93A3B2;
-    --color3: #788896;
-    --color4: #3DB7AB;
-    --color5: #4695DA;
-    --color6: #6558F5;
-    --color7: #CED8E0;
-    --color8: #3f2ef9;
+    --color0: #edf7f9;
+    --color1: #c4e5f8;
+    --color2: #d5dee7;
+    --color3: #E3E8EC;
+    --color4: #244170;
+    --color5: #447BD4;
+    --color6: #355588;
+    --color7: #7590BD;
+    --color8: #14243D;
 
     --font-standard: Arial, Verdana, Helvetica, sans-serif;
-    --font-emphasis: 'Courgette', cursive;
+    --font-emphasis: 'Kanit', cursive;
     --font-snow: 'Snow', cursive;
 }
 
@@ -56,29 +56,35 @@ body{
     margin: auto;
 }
 
-/* ######### delete ######### */
+
 h1{
     font-family: var(--font-emphasis);
-    color: var(--color5);
+    color: var(--color4);
     padding: 0px 10px;
+    text-transform: uppercase;
 }
 
 h2{
     font-family: var(--font-snow);
-    color: var(--color6);
+    color: var(--color4);
+    text-transform: uppercase;
 }
 
 h3{
     font-family: var(--font-standard);
     color: var(--color4);
+    text-transform: uppercase;
 }
-/* ######### delete ######### */
 
 /*
 ************************
     ### HEADER ###
 ************************
 */
+
+header{
+    background-color: var(--color3);
+}
 
 header .container{
     display: flex;
@@ -111,16 +117,6 @@ header .container{
 
 /*
 ************************
-   ### MOBILE MENU ###
-************************
-*/
-nav.mobile-menu{
-    display: none;
-}
-
-
-/*
-************************
   ### DESKTOP MENU ###
 ************************
 */
@@ -136,18 +132,20 @@ nav.mobile-menu{
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    color: rgb(79, 79, 79);
+    color: var(--color8);
     text-align: center;
     
   }
 
   .about:hover{
-    background-color: #b0b7cc;
+    background-color: var(--color8);
     border-radius: 3px;
+    color: var(--color0);
   }
 
   .contact-session:hover{
-    background-color: #b0b7cc;
+    background-color: var(--color8);
+    color: var(--color0);
     border-radius: 3px;
   }
   
@@ -157,8 +155,13 @@ nav.mobile-menu{
   }
 
   .other-services:hover{
-  background-color: #b0b7cc;
     border-radius: 3px;
+    color: var(--color0);
+  }
+
+  .other-services .ots-button:hover{
+    color: var(--color0);
+    background-color: var(--color8);
   }
   
   .other-services .ots-button {
@@ -168,7 +171,7 @@ nav.mobile-menu{
     border: none;
     outline: none;
     cursor: pointer;
-    color: rgb(79, 79, 79);
+    color: var(--color8);
     padding: 0px 10px;
     background-color: inherit;
     font-family: inherit;
@@ -179,7 +182,7 @@ nav.mobile-menu{
   .ots-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: var(--color0);
     min-width: 197px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -187,7 +190,7 @@ nav.mobile-menu{
   
   .ots-content a {
     float: none;
-    color: rgb(79, 79, 79);
+    color: var(--color8);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -202,17 +205,19 @@ nav.mobile-menu{
     display: block;
   }
 
+
 /*
 ************************
   ### CONTACT MENU ###
 ************************
 */
+
+
 #content-contact{
-    background-color: white;
+    background-color: var(--color1);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
 }
 
 #content-contact .container{
@@ -342,7 +347,7 @@ h1{
 
 .content-quote .container{
     height: 300px;
-    background-color: rgb(215, 239, 255);
+    background-color:var(--color1);
     justify-content: space-evenly;
     align-items: center;
     margin-left: auto;
@@ -392,7 +397,7 @@ h1{
     display: flex;
     flex-direction: row;
     height: 600px;
-    background-color: rgb(227, 249, 255);
+    background-color: var(--color1);
 }
 
 #mission-block-wrap div{
@@ -439,28 +444,17 @@ h1{
 }
 
 .content-services{
-    padding-top: 20px;
-    background-color: #d4e2ef;
+    display: flex;
+}
+
+.content-services .container{
+    background-color: var(--color3);
+    width: 100%;
 }
 
 .content-services > .container h1{
     text-align: center;
     font-size: 50px;
-}
-
-.content-choose{
-    background-color: var(--color7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-
-.content-services{
-    display: flex;
-    background-color: var(--color7);
 }
 
 .content-services h1{
@@ -472,10 +466,11 @@ h1{
     display: flex;
     flex-direction: column;
     margin: 20px;
+    align-items: center;
 }
 
 #services-block-wrap div{
-    background-color: white;
+    background-color:;
     max-width: 800px;
     margin-bottom: 40px;
     border-radius: 10px;
@@ -529,10 +524,11 @@ h1{
     flex-direction: column;
     color: #6558F5;
     font-size: 32px;
+    background-color: var(--color3);
 }
 
 .content-choose-text p{
-    color: var(--color4);
+    color: var(--color7);
     font-size: 32px;
     text-align: center;
     padding: 16px;
@@ -544,13 +540,22 @@ h1{
 }
 
 .content-choose .container{
+    background-color: var(--color3);
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+}
+
+.content-choose{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -563,7 +568,7 @@ h1{
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
     transition: all 0.3s ease-out;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
@@ -575,8 +580,9 @@ h1{
   }
    
   .card p {
-    color: var(--color2);
+    color: var(--color7);
     font-size: 16px;
+    text-align: center;
 }
 
 .img-bottom{
@@ -630,10 +636,17 @@ h1{
 
 
 .location-map {
-    display: flex;
-    justify-content: center;
     margin: 0 0 0 0;
-    background-color: white;
+
+}
+
+.location-map .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color1);
+    width: 100%;
+    align-items: center;
 }
 
 .location-map > .container > h1 {
@@ -651,25 +664,29 @@ h1{
 ************************
 */
 
-.footer-content {
-    height: 400px;
-    padding-top: 40px;
-}
-
 .footer-content > .container > div {
     display: flex;
     justify-content: space-around;
 }
 
+#footer-block-wrap {
+    background-color: var(--color3);
+}
+
 #footer-block-wrap > div > h3 {
     text-align: center;
     color: var(--color5);
-    padding: 20px;
+    padding: 40px 20px 0px 20px;
 }
 
 #footer-block-wrap > div > p {
     text-align: center;
-    padding: 15px;
+    padding: 20px 20px;
+}
+
+#footer-block-wrap > div > p:last-child {
+    text-align: center;
+    padding-bottom: 40px;
 }
 
 #footer-block-wrap > div > p > a {
@@ -681,8 +698,9 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 1px solid rgb(128, 127, 127);
+    border-top: 1px solid #807f7f;
     padding: 40px;
+    background-color: var(--color3);
 }
 
 .footer-social-links {
