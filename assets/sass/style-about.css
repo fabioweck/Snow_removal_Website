@@ -3,7 +3,7 @@
     ### PARAMETERS ###
 ************************
 */
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 /*
 ************************
     ### GENERAL ###
@@ -20,7 +20,7 @@ body {
 }
 
 body {
-  background-color: #E3E8ED;
+  background-color: #edf7f9;
   font-family: Arial, Verdana, Helvetica, sans-serif;
 }
 
@@ -35,6 +35,7 @@ body {
 ************************
 */
 header {
+  background-color: #E3E8EC;
   /*
   ************************
   ### DESKTOP MENU ###
@@ -80,16 +81,18 @@ header .navbar a {
   text-align: center;
 }
 header .navbar .about:hover {
-  background-color: #b0b7cc;
+  background-color: #14243D;
   border-radius: 3px;
+  color: #edf7f9;
 }
 header .navbar .contact-session:hover {
-  background-color: #b0b7cc;
+  background-color: #14243D;
   border-radius: 3px;
+  color: #edf7f9;
 }
 header .navbar .other-services:hover {
-  background-color: #b0b7cc;
   border-radius: 3px;
+  color: #edf7f9;
 }
 header .other-services {
   float: left;
@@ -106,6 +109,10 @@ header .other-services .ots-button {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+}
+header .other-services .ots-button:hover {
+  color: #edf7f9;
+  background-color: #14243D;
 }
 header .ots-content {
   display: none;
@@ -148,12 +155,14 @@ header .show {
 
 .about-us {
   color: #1A4573;
-  background-color: #5B8CBC;
+  background-color: #c4e5f8;
 }
 .about-us h1 {
   padding: 50px 0px;
   font-size: 50px;
   text-align: center;
+  font-family: "kanit", cursive;
+  text-transform: uppercase;
 }
 .about-us p {
   font-size: 30px;
@@ -172,23 +181,22 @@ header .show {
      ### FOOTER ###
 ************************
 */
-.footer-content {
-  height: 400px;
-  padding-top: 40px;
-}
 .footer-content .container > div {
   display: flex;
   justify-content: space-around;
 }
 
+#footer-block-wrap {
+  background-color: #E3E8EC;
+}
 #footer-block-wrap div h3 {
   text-align: center;
   color: #4695DA;
-  padding: 20px;
+  padding: 40px 20px 0px 20px;
 }
 #footer-block-wrap div p {
   text-align: center;
-  padding: 15px;
+  padding: 20px 20px;
 }
 #footer-block-wrap div a {
   text-decoration: none;
@@ -200,7 +208,8 @@ header .show {
   flex-direction: column;
   align-items: center;
   border-top: 1px solid rgb(128, 127, 127);
-  padding: 40px;
+  padding: 40px 0px;
+  background-color: #E3E8EC;
 }
 
 .footer-social-links {
