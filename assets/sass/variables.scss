@@ -1,6 +1,8 @@
-$bgColor0: #E3E8ED;
-$bgColor1: #5B8CBC;
+$bgColor0: #edf7f9;
+$bgColor1: #c4e5f8;
 $bgColor2: #386399;
+$bgColor3: #E3E8EC;
+$bgColor4: #14243D;
 
 $txtColor0: white;
 $txtColor1: #4695DA;
@@ -10,9 +12,9 @@ $btnColor0: white;
 $btnColor1: #5553FF;
 $btnColor2: #2320CC;
 
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
-$font-title: 'Courgette', cursive;
+$font-title: 'kanit', cursive;
 $font-title-color: $txtColor2;
 $font-title-size: 2em;
 $font-title-weight: bold;
