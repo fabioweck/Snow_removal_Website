@@ -130,18 +130,23 @@ function checkInputs()
   }
 
   if (sum === 5){
-    timeout = setTimeout(clearForm(), 200);
+    // 200 mseconds delay
+    timeout = setTimeout(function(){
+      clearForm();
+    }, 200);
   }
+
+  
 
 }
 
 
 /*
 ************************
-### SCOPE - SHOW PLANS AND PRICES ###
+### SHOW PLANS AND PRICES ###
 ************************
 */
-{
+{//Monitor each service and show or hide plans and prices when the button is pressed.
     for(let i=1; i <= 3; i++)
     {
         document.querySelector(`input[name=service-0${i}]`)
@@ -164,6 +169,34 @@ function checkInputs()
     }
 }
 
+/*
+************************
+  ### BUY NOW ###
+************************
+*/
+{//Simulate the purchase after press the button.
+  for(let i=1; i <= 3; i++)
+  {
+    document.querySelector(`input[name=service-0${i}-buy]`)
+    .addEventListener('click', ()=>{
+
+      switch(i) {
+        case 1:
+          alert("Congrats! You bought a SINGLE service!");
+          break;
+
+        case 2:
+          alert("Congrats! You bought a MONTHLY service!");
+          break;
+
+          case 3:
+            alert("Congrats! You bought a ANNUAL service!");
+            break;
+        default:
+      }
+    })
+  }
+}
 
 /*
 ************************
