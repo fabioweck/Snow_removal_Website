@@ -124,7 +124,7 @@ header .ots-content {
 }
 header .ots-content a {
   float: none;
-  color: #14243D;
+  color: rgb(79, 79, 79);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -287,6 +287,9 @@ header .show {
   }
   header .container .navbar .other-services {
     padding: 15px 0px;
+  }
+  header .container .navbar .other-services:hover {
+    background-color: #14243D;
   }
   .footer-content {
     height: 700px;
