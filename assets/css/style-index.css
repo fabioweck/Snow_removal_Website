@@ -113,13 +113,6 @@ header .container{
     font-weight: bold;
 }
 
-.desktop-menu{
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
 /*
 ************************
   ### DESKTOP MENU ###
@@ -130,9 +123,9 @@ header .container{
     display:flex;
     flex-direction: row;
     align-items: center;
-  }
+}
   
-  .navbar a {
+.navbar a {
     padding: 0px 10px;
     text-decoration: none;
     font-size: 20px;
@@ -140,36 +133,36 @@ header .container{
     color: var(--color8);
     text-align: center;
     
-  }
+}
 
-  .about:hover{
+.about:hover{
     background-color: var(--color8);
     border-radius: 3px;
     color: var(--color0);
-  }
+}
 
-  .contact-session:hover{
+.contact-session:hover{
     background-color: var(--color8);
     color: var(--color0);
     border-radius: 3px;
-  }
+ }
   
-  .other-services {
+.other-services {
     float: left;
     overflow: hidden;
-  }
+}
 
-  .other-services:hover{
+.other-services:hover{
     border-radius: 3px;
     color: var(--color0);
-  }
+}
 
-  .other-services .ots-button:hover{
+.other-services .ots-button:hover{
     color: var(--color0);
     background-color: var(--color8);
-  }
+}
   
-  .other-services .ots-button {
+.other-services .ots-button {
 
     font-weight: bold;
     font-size: 20px;  
@@ -181,164 +174,39 @@ header .container{
     background-color: inherit;
     font-family: inherit;
     margin: 0;
-  }
+}
   
-  
-  .ots-content {
+.ots-content {
     display: none;
     position: absolute;
     background-color: var(--color0);
     min-width: 197px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
+}
   
-  .ots-content a {
+.ots-content a {
     float: none;
     color: var(--color8);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: center;
-  }
+}
   
-  .ots-content a:hover {
+.ots-content a:hover {
     background-color: var(--color2);
-  }
+}
   
-  .show {
+.show {
     display: block;
-  }
+}
 
-
-/*
-************************
-  ### CONTACT MENU ###
-************************
-*/
-
-
-#content-contact{
+.desktop-menu{
+    width: 50%;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-}
-
-#content-contact .container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--color1);
-}
-
-#content-contact .container h1{
-    text-align: center;
-    margin: 20px 0 40px 0;
-}
-
-.form{
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 20px;
-}
-
-.form input, textarea{
-    resize: vertical;
-    border: 2px solid #3E445B;
-    border-radius: 5px;
-    outline: 0;
-    display: block;
-    font-size: 14px;
-    width: 100%;
-    padding: 15px;
-  }
-
-.form label {
-    display: inline-block;
-    margin-bottom: 5px;
-}
-
-.form-control {
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    position: relative;
-}
-
-.form button {
-    background-color: var(--color6);
-    padding: 15px 30px;
-    border: none;
-    font-size: 30px;
-    color: var(--color0);
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    width: 300px;
-}
-
-.form button:hover {
-    background-color: var(--color8);
-    transition: 0.3s;
-}
-
-.wrap-button-form{
-    display: flex;
-    justify-content: center;
-}
-
-.form-control.success input {
-    border: 3px solid var(--color9);
-}
-
-.form-control.success textarea {
-    border: 3px solid var(--color9);
-}
-
-.form-control.error input {
-    border: 3px solid var(--color10);
-}
-
-.form-control.error textarea {
-    border: 3px solid var(--color10);
-}
-
-.form-control.clear input {
-    border: 3px solid var(--color11);
-}
-
-.form-control.clear textarea {
-    border: 3px solid var(--color11);
-}
-
-.form-control.error i.img-error {
-    visibility: visible;
-}
-
-.form-control.success i.img-success {
-    visibility: visible;
-}
-
-.form-control.error small{
-    color: var(--color10);
-    visibility: visible;
-}
-
-.form-control i {
-    position: absolute;
-    top: 40px;
-    right: 10px;
-    visibility: hidden;
-}
-
-.form-control small {
-    visibility: hidden;
-    position: absolute;
-    margin-top: 5px;
-    font-size: 14px;
 }
 
 /*
@@ -539,6 +407,188 @@ h1{
     justify-content: space-between;
 }
 
+/*>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+#services-block-wrap .plan-wrap div{
+    background-color: var(--color1);
+    box-shadow: 0px 0px 10px var(--color13);
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    width: 220px;
+}
+
+#services-block-wrap .plan-wrap div > h3{
+    padding: 20px;
+    color: var(--color13);
+}
+
+#services-block-wrap .plan-wrap div h4 > span{
+    font-size: 2.5em;
+    color: var(--color5);
+}
+
+#services-block-wrap .plan-wrap div > div{
+    border-top: solid 2px var(--color8);
+    box-shadow: none;
+    margin-top: 20px;
+    width: 80%;
+}
+
+#services-block-wrap .plan-wrap div p{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+}
+
+#services-block-wrap .plan-wrap div p img{
+    width: 30px;
+}
+
+#services-block-wrap .plan-wrap div > input{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/*
+************************
+  ### CONTACT MENU ###
+************************
+*/
+
+#content-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content-contact .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--color1);
+}
+
+#content-contact .container h1{
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.form{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 20px;
+}
+
+.form input, textarea{
+    resize: vertical;
+    border: 2px solid #3E445B;
+    border-radius: 5px;
+    outline: 0;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    padding: 15px;
+  }
+
+.form label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form button {
+    background-color: var(--color6);
+    padding: 15px 30px;
+    border: none;
+    font-size: 30px;
+    color: var(--color0);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 300px;
+}
+
+.form button:hover {
+    background-color: var(--color8);
+    transition: 0.3s;
+}
+
+.wrap-button-form{
+    display: flex;
+    justify-content: center;
+}
+
+.form-control.success input {
+    border: 3px solid var(--color9);
+}
+
+.form-control.success textarea {
+    border: 3px solid var(--color9);
+}
+
+.form-control.error input {
+    border: 3px solid var(--color10);
+}
+
+.form-control.error textarea {
+    border: 3px solid var(--color10);
+}
+
+.form-control.clear input {
+    border: 3px solid var(--color11);
+}
+
+.form-control.clear textarea {
+    border: 3px solid var(--color11);
+}
+
+.form-control.error i.img-error {
+    visibility: visible;
+}
+
+.form-control.success i.img-success {
+    visibility: visible;
+}
+
+.form-control.error small{
+    color: var(--color10);
+    visibility: visible;
+}
+
+.form-control i {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/*
+************************
+  ### CONTENT CHOOSE MENU ###
+************************
+*/
+
 .content-choose-text{
     padding: 15px;
     display: flex;
@@ -614,51 +664,11 @@ h1{
     display:block;
 }
 
-#services-block-wrap .plan-wrap div{
-    background-color: var(--color1);
-    box-shadow: 0px 0px 10px var(--color13);
-    border-radius: 10px;
-    text-align: center;
-    margin: auto;
-    width: 220px;
-}
-
-#services-block-wrap .plan-wrap div > h3{
-    padding: 20px;
-    color: var(--color13);
-}
-
-#services-block-wrap .plan-wrap div h4 > span{
-    font-size: 2.5em;
-    color: var(--color5);
-}
-
-#services-block-wrap .plan-wrap div > div{
-    border-top: solid 2px var(--color8);
-    box-shadow: none;
-    margin-top: 20px;
-    width: 80%;
-}
-
-#services-block-wrap .plan-wrap div p{
-    width: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 15px;
-}
-
-#services-block-wrap .plan-wrap div p img{
-    width: 30px;
-}
-
-#services-block-wrap .plan-wrap div > input{
-    width: 80%;
-    margin: auto;
-    margin-bottom: 10px;
-}
-
+/*
+************************
+  ### LOCATION MENU ###
+************************
+*/
 
 .location-map {
     margin: 0 0 0 0;
