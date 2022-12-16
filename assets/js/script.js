@@ -18,14 +18,13 @@ var message = document.getElementById('message')
 ************************
 */
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
+function myFunction() // opens the dropdown menu with links
+{
   document.getElementById("drop-ots-content").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
+window.onclick = function(e) // closes then dropdown when the user clicks outside menu
+{
   if (!e.target.matches('.ots-button')) {
   var myDropdown = document.getElementById("drop-ots-content");
     if (myDropdown.classList.contains('show')) {

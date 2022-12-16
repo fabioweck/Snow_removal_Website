@@ -74,6 +74,7 @@ header{
         overflow: hidden;
         display:flex;
         flex-direction: row;
+        align-items: center;
 
         a {
             padding: 0px 10px;
@@ -84,13 +85,29 @@ header{
             text-align: center;
             
         }
+
+        .about:hover{
+            background-color: #b0b7cc;
+            border-radius: 3px;
+          }
+          
+        .contact-session:hover{
+            background-color: #b0b7cc;
+            border-radius: 3px;
+        }
+
+        .other-services:hover{
+            background-color: #b0b7cc;
+              border-radius: 3px;
+            }
+
     }
     
-    .dropdown {
+    .other-services {
         float: left;
         overflow: hidden;
 
-        .dropbtn {
+        .ots-button {
 
             font-weight: bold;
             font-size: 20px;  
@@ -98,19 +115,20 @@ header{
             outline: none;
             cursor: pointer;
             color: rgb(79, 79, 79);
-            padding: 0px 20px;
+            padding: 0px 10px;
             background-color: inherit;
             font-family: inherit;
             margin: 0;
         }
+
     }
     
     
-    .dropdown-content {
+    .ots-content {
         display: none;
         position: absolute;
         background-color: #f9f9f9;
-        min-width: 140px;
+        min-width: 197px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
 
@@ -139,16 +157,42 @@ header{
     ### CONTENT ###
 ************************
 */
+.img-division-top-about{
+
+    height: 100%;
+    
+    .container{
+        height: 100%;
+    }
+
+    img{
+        width: 100%;
+        display: block;
+    }
+}
+
 .about-us{
     color: $txtColor2;
     background-color: $bgColor1;
 
     h1{
-        padding: 20px;
+        padding: 50px 0px;
+        font-size: 50px;
+        text-align: center;
     }
 
     p{
-        padding: 20px;
+    font-size: 30px;
+    padding: 0px 60px 50px 60px;
+    text-align: center;
+
+    }
+
+    #gandalf{
+        font-weight: bold;
+        font-size: 28px;
+        padding-bottom: 80px;
+        text-align: center;
     }
 
 }
@@ -284,10 +328,20 @@ header{
                 a {
                     padding: 15px 0px;
                 }
-    
-                .dropdown {
-                    padding: 15px 0px;
-                }
+            
+                .about{
+                    padding: 15px 65px;
+                  }
+            
+                .contact-session{
+                    padding: 15px 50px;
+                  }
+            
+                .other-services
+                  {
+                     padding: 15px 0px;
+                  }
+            
             }
         }
     }

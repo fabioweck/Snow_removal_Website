@@ -180,7 +180,7 @@ nav.mobile-menu{
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 140px;
+    min-width: 197px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -380,15 +380,12 @@ h1{
 }
 
 .img-division-top > .container{
-    height: 500px;
-    background-image: url("../img/image1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height:100%;
 }
 
 .img-division-top img{
-    width: 100%;   
+    width: 100%;  
+    display: block; 
 }
 
 #mission-block-wrap{
@@ -796,7 +793,7 @@ h1{
          padding: 15px 0px;
       }
 
- #services-block-wrap .plan-wrap{
+    #services-block-wrap .plan-wrap{
         flex-direction: column;
         justify-content: center;
     }

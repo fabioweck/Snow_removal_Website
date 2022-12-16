@@ -69,6 +69,7 @@ header .navbar {
   overflow: hidden;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 header .navbar a {
   padding: 0px 10px;
@@ -78,31 +79,43 @@ header .navbar a {
   color: rgb(79, 79, 79);
   text-align: center;
 }
-header .dropdown {
+header .navbar .about:hover {
+  background-color: #b0b7cc;
+  border-radius: 3px;
+}
+header .navbar .contact-session:hover {
+  background-color: #b0b7cc;
+  border-radius: 3px;
+}
+header .navbar .other-services:hover {
+  background-color: #b0b7cc;
+  border-radius: 3px;
+}
+header .other-services {
   float: left;
   overflow: hidden;
 }
-header .dropdown .dropbtn {
+header .other-services .ots-button {
   font-weight: bold;
   font-size: 20px;
   border: none;
   outline: none;
   cursor: pointer;
   color: rgb(79, 79, 79);
-  padding: 0px 20px;
+  padding: 0px 10px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
 }
-header .dropdown-content {
+header .ots-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 140px;
+  min-width: 197px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-header .dropdown-content a {
+header .ots-content a {
   float: none;
   color: rgb(79, 79, 79);
   padding: 12px 16px;
@@ -110,7 +123,7 @@ header .dropdown-content a {
   display: block;
   text-align: center;
 }
-header .dropdown-content a:hover {
+header .ots-content a:hover {
   background-color: #ddd;
 }
 header .show {
@@ -122,15 +135,36 @@ header .show {
     ### CONTENT ###
 ************************
 */
+.img-division-top-about {
+  height: 100%;
+}
+.img-division-top-about .container {
+  height: 100%;
+}
+.img-division-top-about img {
+  width: 100%;
+  display: block;
+}
+
 .about-us {
   color: #1A4573;
   background-color: #5B8CBC;
 }
 .about-us h1 {
-  padding: 20px;
+  padding: 50px 0px;
+  font-size: 50px;
+  text-align: center;
 }
 .about-us p {
-  padding: 20px;
+  font-size: 30px;
+  padding: 0px 60px 50px 60px;
+  text-align: center;
+}
+.about-us #gandalf {
+  font-weight: bold;
+  font-size: 28px;
+  padding-bottom: 80px;
+  text-align: center;
 }
 
 /*
@@ -236,7 +270,13 @@ header .show {
   header .container .navbar a {
     padding: 15px 0px;
   }
-  header .container .navbar .dropdown {
+  header .container .navbar .about {
+    padding: 15px 65px;
+  }
+  header .container .navbar .contact-session {
+    padding: 15px 50px;
+  }
+  header .container .navbar .other-services {
     padding: 15px 0px;
   }
   .footer-content {
