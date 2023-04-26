@@ -1,13 +1,3 @@
-Portfolio Building
-If you have any ideas you’d like to build as your website give the detailed information to your instructor and start working on it. It should include all the different HTML, CSS, SASS and JS functionalities we learned in class and standard web components.  
-
-Otherwise, work on the idea given by your instructor.   
-
-This project is group work. Each group should have up to 4 members. Once it is done it should be published on 000webhost service and uploaded on the d2l final project dropbox as a zip file.
-
-This website can be a valuable way to show your qualifications and portfolio to
-potential employers, classmates, friends and families. 
-
 Lawn Mowing and Snow Removal service provider company website
 
 1.	Type lawn mowing and snow removal services and review a minimum of five websites. Keep a copy of those website links.
@@ -28,14 +18,3 @@ Lawn Mowing and Snow Removal service provider company website
 3.	Use HTML, CSS, SASS and JS to build this project
 4.	Proper project file organization is mandatory
 5.	Add a comment in your Javascript code
-
-
-Rubrics
-
-Your final submission will be assessed for:
-
--file organization
--code quality
--included features such as different web components
--completeness such as covering most of the topics we learned in class 
--functionality such as working navigation, an interactive feature from JS that can be user input verification, validation, popup message, calculation, warning, current date, estimated date etc
